@@ -1,5 +1,5 @@
-import { createRoot } from "react-dom/client"
-const root = createRoot(document.getElementById("root"))
+import { createRoot } from "react-dom/client";
+const root = createRoot(document.getElementById("root"));
 
 /**
 Challenge: 
@@ -17,18 +17,30 @@ Part 2:
     "© 20xx <last name here> development. All rights reserved."
  */
 
-
 function Page() {
-    return (
+  return (
+    <div>
+      <header>
+        <img src="react-logo.png" width="40px" alt="React logo." />
+      </header>
+      <main>
+        <h1>Reasons why I'm excited to learn React:</h1>
         <ol>
-            <li>React is a popular library, so I will be able to
-            fit in with all the coolest devs out there! 😎</li>
-            <li>I am more likely to get a job as a front end developer
-            if I know React</li>
+          <li>
+            React is a popular library, so I will be able to fit in with all the
+            coolest devs out there! 😎
+          </li>
+          <li>
+            I am more likely to get a job as a front end developer if I know
+            React
+          </li>
         </ol>
-    )
+      </main>
+      <footer>
+        © 2024 Whitlam development. All rights reserved.
+      </footer>
+    </div>
+  );
 }
 
-root.render(
-    <Page />
-)
+root.render(<Page />);
