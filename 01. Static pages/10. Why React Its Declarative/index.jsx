@@ -19,3 +19,9 @@ Don't use innerHTML to accomplish any of this.
     
 */
 
+const element = document.createElement("h1");
+element.textContent = "Hello, World";
+element.classList.add("header");
+
+const root = document.getElementById("root");
+root.appendChild(element);
