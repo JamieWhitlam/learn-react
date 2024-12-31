@@ -1,5 +1,5 @@
 1. What is a React component?
-
+Element you can reuse.
 
 2. What's wrong with this code?
 ```
@@ -9,6 +9,7 @@ function myComponent() {
     )
 }
 ```
+Function name should be pascal case e.g. MyComponent
 
 3. What's wrong with this code?
 ```
@@ -22,3 +23,4 @@ function Header() {
 
 root.render(Header())
 ```
+Function should be rendered with the following syntax: <Header /> similar to HTML.
