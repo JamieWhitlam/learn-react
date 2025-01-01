@@ -6,19 +6,29 @@
  *   and render those however you'd like
  * - Use your favorite 2-part jokes (setup & punchline), or check
  *   jokes.md file for some examples.
- * 
+ *
  * EXTRA CREDIT:
  * Some jokes are only a punchline with no setup:
- * 
- * E.g.: "It’s hard to explain puns to kleptomaniacs because 
+ *
+ * E.g.: "It’s hard to explain puns to kleptomaniacs because
  * they always take things literally."
- * 
- * If you don't pass in a "question" prop, how might you make it only 
+ *
+ * If you don't pass in a "question" prop, how might you make it only
  * show the punchline?
  */
 
+import Joke from "/components/Joke";
+
 export default function App() {
-    return (
-        <></>
-    )
+  return (
+    <>
+      <Joke
+        setup="Why did the chicken cross the road?"
+        punchline="To get to the other side."
+      />
+      <Joke
+        punchline="It’s hard to explain puns to kleptomaniacs because * they always take things literally."
+      />
+    </>
+  );
 }
