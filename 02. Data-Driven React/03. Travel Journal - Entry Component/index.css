@@ -1,5 +1,7 @@
-html, body {
+html,
+body {
     margin: 0;
+    font-family: Inter;
 }
 
 header {
@@ -11,13 +13,71 @@ header {
     height: 55px;
 }
 
-header > img {
+header>img {
     width: 24px;
     margin-right: 7px;
 }
 
-header > h1 {
+header>h1 {
     font-size: 0.9rem;
     font-weight: 500;
-    font-family: Inter;
+}
+
+.entry-container {
+    margin-top: 50px;
+    margin-inline: 50px 50px;
+    display: flex;
+    padding: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: #f5f3f3;
+    border-bottom-width: 0.2rem;
+    gap: 1.5rem;
+}
+
+.photo {
+    height: 220px;
+    width: 170px;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 7px;
+}
+
+.text-container {
+    padding-top: 20px;
+}
+
+.view-location-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.view-location-marker {
+    width: 10px;
+    margin-right: -10px;
+}
+
+.view-location-marker-text {
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.view-location-link {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.location-heading {
+    margin-block: 10px 0px;
+    font-size: 2rem;
+}
+
+.dates {
+    margin-block: 30px 10px;
+    font-size: 0.8rem;
+}
+
+.location-text {
+    color: gray;
 }
