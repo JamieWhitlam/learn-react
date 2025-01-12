@@ -7,13 +7,12 @@ export default function App() {
      * some state initiated with React.useState()
      */
     
-    const result = React.useState("Hello")
-    console.log(result)
+    const result = React.useState("Yessss")
     
     return (
         <main>
             <h1 className="title">Is state important to know?</h1>
-            <button className="value">Yes</button>
+            <button className="value">{result[0]}</button>
         </main>
     )
 }
