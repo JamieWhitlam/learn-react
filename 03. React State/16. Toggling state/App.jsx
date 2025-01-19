@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function App() {
     /**
      * Challenge: 
@@ -7,10 +9,16 @@ export default function App() {
      * - Display "Yes" if `isGoingOut` is `true`, "No" otherwise
      */
 
+    const [isGoingOut, setIsGoingOut] = React.useState(false);
+
+    function toggleIsGoingOut() {
+        setIsGoingOut(prevValue => !prevValue);
+    }
+
     return (
         <main>
             <h1 className="title">Do I feel like going out tonight?</h1>
-            <button className="value">Yes</button>
+            <button onClick={toggleIsGoingOut} className="value">{isGoingOut ? "Yes" : "No"}</button>
         </main>
     )
 }
